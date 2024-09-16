@@ -1,4 +1,5 @@
 # Proyecto de Pruebas Automatizadas
+# Autor: Victor Vanderviest
 
 Este proyecto contiene una suite de pruebas automatizadas utilizando node.js, Cypress, Cucumber y Mochawesome, en su logica, guarda las evidencias de las pruebas en la carpeta reports, en index.html . En la carpeta screemshop se guardan las capturas de pantalla por features, adicionalmente si la prueba es exitosa se abre automaticamente el reporte visual de mochawesome en caso contrario tienes que abrir directamente el reporte en la carpeta report.
 Si quieres ejecutar en diferentes navegadores , desde el comando npx cypress open puedes configurar a tu preferencia 
