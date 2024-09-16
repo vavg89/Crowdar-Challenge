@@ -25,6 +25,9 @@ Para ejecutar los casos de prueba, utiliza los siguientes comandos:
 - **`npm run test-Login`**: Ejecuta un caso de prueba que falla intencionalmente, específicamente para el "Inicio de sesión".
 - **`npm run test-Apiml`**: Interactúa con un servicio web de Mercado Libre y verifica que contenga departamentos.
 
+El sistema esta configurado para sobreescribir el reporte generado por cada ejecucion, si deseas mantener los reportes 
+cambia el valor de la variable "overwrite" a false, en el archivo de configuracion : cypress.config.js.
+
 ## **modulo de cypress : npx cypress open**
 
 ## Instalación de Node.js y npm
