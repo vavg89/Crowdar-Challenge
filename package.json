@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testAll": "cypress run && npm run open-report",
+    "test-CartAdd": "cypress run --spec 'cypress/e2e/features/agregar_productos_carrito_feature/agregar_productos_carrito.feature' && npm run open-report",
+    "test-Login": "cypress run --spec 'cypress/e2e/features/inicio_secion_sauce_demo_feature/inicio_secion_sauce_demo.feature' && npm run open-report",
+    "test-Apiml": "cypress run --spec 'cypress/e2e/features/verificar_elementos_api_ml_feature/verificar_elementos_api_ml.feature' && npm run open-report",
+    "open-report": "start cypress/reports/index.html",
+    "generate-report": "npx mochawesome-merge cypress/reports/*.json | npx mochawesome-report-generator --reportDir cypress/reports --inline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "cypress": "^13.14.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/step_definitions"
+  }
+}
