@@ -16,7 +16,9 @@ Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
 1. **Clonar el Repositorio**
 2. **ejecutar: npm install**
 3. **ejecucion de casos:**
-    **npm npm run test-CartAdd**
-    **npm npm run test-Login**
-    **npm npm run test-Apiml**
+    npm npm run test-CartAdd : automatizacion casos de preubas exitosos “Agregado de productos al carrito de compras”
+    npm npm run test-Login : hace que uno de los casos falle intencionalmente “Inicio de sesión”
+    npm npm run test-Apiml : Agregar en el framework realizado una manera de interactuar con servicios web, y
+agregue un caso de prueba adicional, que interactúe con un servicio de Mercado
+Libre y verifique que contenga departamentos.
 4. **modulo de cypress : npx cypress open**
