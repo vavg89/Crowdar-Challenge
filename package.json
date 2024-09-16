@@ -7,7 +7,9 @@
     "testAll": "cypress run && npm run open-report",
     "test-CartAdd": "cypress run --spec 'cypress/e2e/features/agregar_productos_carrito_feature/agregar_productos_carrito.feature' && npm run open-report",
     "test-Login": "cypress run --spec 'cypress/e2e/features/inicio_secion_sauce_demo_feature/inicio_secion_sauce_demo.feature' && npm run open-report",
-    "test-Apiml": "cypress run --spec 'cypress/e2e/features/verificar_elementos_api_ml_feature/verificar_elementos_api_ml.feature' && npm run open-report"
+    "test-Apiml": "cypress run --spec 'cypress/e2e/features/verificar_elementos_api_ml_feature/verificar_elementos_api_ml.feature' && npm run open-report",
+    "open-report": "start cypress/reports/index.html",
+    "generate-report": "npx mochawesome-merge cypress/reports/*.json | npx mochawesome-report-generator --reportDir cypress/reports --inline"
   },
   "keywords": [],
   "author": "",
