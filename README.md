@@ -26,3 +26,24 @@ Para ejecutar los casos de prueba, utiliza los siguientes comandos:
 - **`npm run test-Apiml`**: Interactúa con un servicio web de Mercado Libre y verifica que contenga departamentos.
 
 ## **modulo de cypress : npx cypress open**
+
+## Instalación de Node.js y npm
+
+Si no tienes **Node.js** instalado, sigue estos pasos para instalarlo::
+
+1. **Descargar Node.js**
+
+   - Ve a la página oficial de [Node.js](https://nodejs.org/) y descarga la versión recomendada para tu sistema operativo.
+   - El instalador incluirá **npm** (Node Package Manager) automáticamente.
+
+2. **Instalar Node.js**
+
+   - Sigue las instrucciones del instalador para completar la instalación.
+
+3. **Verificar la instalación**
+
+   - Abre una terminal y verifica que **Node.js** y **npm** se hayan instalado correctamente ejecutando los siguientes comandos:
+
+   ```bash
+   node -v
+   npm -v
